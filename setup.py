@@ -58,12 +58,6 @@ setup_args = dict(
         'requests',
         'tornado>=4.1',
     ],
-    tests_require = [
-        'pytest',
-        'pytest-cov',
-        'jupyterhub',
-        'notebook',
-    ],
     cmdclass = {
         'bdist_egg': EggsNotAllowed,
         'test': PyTest,

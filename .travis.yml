@@ -4,7 +4,7 @@ python:
     - 3.5
     - 3.4
 install:
-    - pip install -v --pre .
+    - pip install -v --pre . -r test-requirements.txt
 script:
     - travis_retry python setup.py test
 after_success:
