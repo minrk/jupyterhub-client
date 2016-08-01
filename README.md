@@ -1,5 +1,7 @@
 # jupyterhub-client
 
+[![Build Status](https://travis-ci.org/minrk/jupyterhub-client.svg?branch=master)](https://travis-ci.org/minrk/jupyterhub-client)
+
 Example Python client(s) for the JupyterHub REST API.
 There's a synchronous client implemented with Requests,
 and an async client using tornado coroutines.
