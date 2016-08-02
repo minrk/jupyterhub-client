@@ -5,6 +5,7 @@ python:
     - 3.4
 install:
     - pip install -v --pre . -r test-requirements.txt
+    - npm install -g configurable-http-proxy
 script:
     - travis_retry python setup.py test
 after_success:
