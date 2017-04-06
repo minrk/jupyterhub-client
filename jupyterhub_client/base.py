@@ -1,5 +1,6 @@
 import logging
 from urllib.parse import quote
+import json
 
 import requests
 
@@ -119,7 +120,7 @@ class BaseJupyterHubClient(object):
     def check_cookie(self, name, value):
         """Identify a user based on a cookie"""
         name = quote(name, safe='')
-        return self._api_request('/authorizations/cookie/{name}'.format(token=token))
+        return self._api_request('/authorizations/cookie/{name}/{value}'.format(name=name, value=value))
 
     def shutdown(self, proxy=None, servers=None):
         """Shutdown the Hub"""
